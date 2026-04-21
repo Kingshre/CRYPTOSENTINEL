@@ -1,0 +1,12 @@
+{
+  "holdings": {
+    "bitcoin": 0.5,
+    "ethereum": 2.0,
+    "solana": 10.0
+  },
+  "cost_basis": {
+    "bitcoin": 60000,
+    "ethereum": 2000,
+    "solana": 70
+  }
+}
