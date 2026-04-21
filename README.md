@@ -14,14 +14,9 @@ Real-time crypto monitoring tool that combines live price data and NLP sentiment
 
 ## Tech Stack
 
-- **Backend:** Python, Flask, Flask-CORS
-- **NLP:** VADER Sentiment Analysis
-- **Data:** CoinGecko API, RSS feeds (CoinTelegraph)
-- **Frontend:** TypeScript, React, Vite
-- **Notifications:** Discord Webhooks
-
 ## Project Structure
 
+```
 cryptosentinel/
 ├── server/
 │   ├── app.py          # Flask REST API
@@ -33,8 +28,9 @@ cryptosentinel/
 ├── cli/
 │   └── sentinel.py     # CLI tool
 └── web/
-└── src/
-└── App.tsx     # React dashboard
+    └── src/
+        └── App.tsx     # React dashboard
+```
 
 ## Setup
 
@@ -53,6 +49,9 @@ pip install flask flask-cors requests python-dotenv vaderSentiment feedparser
 
 ### 3. Configure environment
 Create a `.env` file in the root:
+
+COINGECKO_BASE_URL=https://api.coingecko.com/api/v3
+DISCORD_WEBHOOK_URL=your_discord_webhook_url_here
 ### 4. Start the Flask API
 ```bash
 python server/app.py
